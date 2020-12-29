@@ -222,7 +222,7 @@ public class WhiteboardCanvas extends JPanel implements Runnable, MouseListener,
 
 	public void print() {
 		PrinterJob job = PrinterJob.getPrinterJob();
-		job.setPrintable(print.this);
+		//job.setPrintable(print.this);
 		boolean ok = job.printDialog();
 		if (ok) {
 			try {
